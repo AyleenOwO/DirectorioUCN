@@ -13,38 +13,41 @@
     android:orientation="vertical"
     tools:context=".activities.MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimaryDark"
-        android:elevation="4dp"
-        android:minHeight="?attr/actionBarSize"
-        app:contentInsetStart="0dp"
-        app:contentInsetStartWithNavigation="0dp"
-        app:navigationIcon="@drawable/logo_ucn"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:subtitle="Universidad Católica del Norte"
-        app:subtitleTextColor="@color/textColorPrimary"
-        app:title="Directorio UCN"
-        app:titleTextColor="@color/textColorPrimary" />
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:subtitle="Universidad Católica del Norte"
+            app:navigationIcon="@drawable/logo_ucn"
+            app:subtitleTextColor="@color/textColorPrimary"
+            app:title="Directorio UCN"
+            app:titleTextColor="@color/textColorPrimary"/>
+
+        <com.miguelcatalan.materialsearchview.MaterialSearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:searchBackground="@color/colorPrimaryDark"
+            app:searchSuggestionBackground="@color/colorPrimaryDark"
+            app:searchCloseIcon="@drawable/ic_clear_white_24dp"
+            app:searchBackIcon="@drawable/ic_arrow_back_white_24dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            />
+
+    </FrameLayout>
 
     <ListView
         android:id="@android:id/list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar"
+        android:divider="#806326"
         android:dividerHeight="1dp" />
-
-    <TextView
-        android:id="@android:id/empty"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textSize="18sp"
-        android:text="@string/empty"
-        android:textStyle="bold"
-        android:visibility="gone" />
-
 
 </LinearLayout>
