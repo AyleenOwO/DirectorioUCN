@@ -12,9 +12,21 @@
     <color name="colorSkyDark">#425563</color>
     <color name="colorSkyLight">#DBE2E9</color>
 
+    <color name="deepOcean">#005FB9</color>
+    <color name="continentalSlope">#006DC0</color>
+    <color name="continentalShelf">#007CC7</color>
+    <color name="babyBlue">#74AADD</color>
+    <color name="lightGrayBlue">#94BBE4</color>
+
     <color name="colorEarth">#B86125</color>
     <color name="colorEarthDark">#623412</color>
     <color name="colorEarthLight">#FFAA4D</color>
+
+    <color name="orange">#DB6C25</color>
+    <color name="tangerine">#D37F4F</color>
+    <color name="meriGold">#DB8F64</color>
+    <color name="peach">#F6CEBB</color>
+    <color name="babyPink">#FBDED1</color>
 
     <color name="colorPrimary">@color/colorSky</color>
     <color name="colorPrimaryDark">@color/colorSkyDark</color>
