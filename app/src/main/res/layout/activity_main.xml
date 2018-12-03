@@ -1,9 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright (c) 2018.  Diego Urrutia Astorga <durrutia@ucn.cl>
-  ~ This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
-  ~ http://creativecommons.org/licenses/by-nc/4.0/
-  ~
-  -->
+<?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -22,8 +17,9 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/colorPrimaryDark"
-            app:subtitle="Universidad Católica del Norte"
             app:navigationIcon="@drawable/logo_ucn"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:subtitle="Universidad Católica del Norte"
             app:subtitleTextColor="@color/textColorPrimary"
             app:title="Directorio UCN"
             app:titleTextColor="@color/textColorPrimary"/>
@@ -36,8 +32,8 @@
             app:searchSuggestionBackground="@color/colorPrimaryDark"
             app:searchCloseIcon="@drawable/ic_clear_white_24dp"
             app:searchBackIcon="@drawable/ic_arrow_back_white_24dp"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF"
+            android:textColor="@color/textColorPrimary"
+            android:textColorHint="@color/textColorPrimary"
             />
 
     </FrameLayout>
