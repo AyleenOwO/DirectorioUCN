@@ -1,9 +1,4 @@
-/*
- * Copyright (c) 2018.  Diego Urrutia Astorga <durrutia@ucn.cl>
- * This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
- * http://creativecommons.org/licenses/by-nc/4.0/
- *
- */
+
 
 package cl.ucn.disc.dsm.directorio.adapters;
 
@@ -92,21 +87,6 @@ public final class ListAdapter extends ArrayAdapter<Persona> {
         // Nombre
         holder.nombre.setText(persona.getNombre());
 
-        // Cargo
-        //holder.cargo.setText(persona.getCargo());
-
-        //Unidad
-        //holder.unidad.setText(persona.getUnidad());
-
-        // Numero de telefono
-        //holder.telefono.setText(persona.getTelefono());
-
-        // Correo electronico
-        //holder.email.setText(persona.getEmail());
-
-        // Oficina
-        //holder.oficina.setText(persona.getOficina());
-
         return convertView;
     }
 
@@ -117,23 +97,9 @@ public final class ListAdapter extends ArrayAdapter<Persona> {
 
         TextView nombre;
 
-        TextView cargo;
-
-        TextView unidad;
-
-        TextView telefono;
-
-        TextView email;
-
-        TextView oficina;
-
         ViewHolder(View view) {
+
             nombre = view.findViewById(R.id.rp_tv_nombre);
-            //cargo = view.findViewById(R.id.rp_tv_cargo);
-            //unidad = view.findViewById(R.id.rp_tv_unidad);
-            //telefono = view.findViewById(R.id.rp_tv_telefono);
-            //email = view.findViewById(R.id.rp_tv_email);
-            //oficina = view.findViewById(R.id.rp_tv_oficina);
 
         }
 
